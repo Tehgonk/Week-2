@@ -15,11 +15,14 @@ int main() {
     scanf("%d", &numericalGrade);
 
     
-    switch (numericalGrade) // Convert numerical grade to letter grade using switch statement.
+    // Convert numerical grade to letter grade using switch statement.
+    switch (numericalGrade)
     {
     
-    case 0 ... 59: // Specify a case range for each letter grade.
-        printf("\nLetter grade is: F\n"); // Output a letter grade for each case.
+    // Specify a case range for each letter grade.
+    case 0 ... 59:
+        // Output a letter grade for each case.
+        printf("\nLetter grade is: F\n");
         break;
 
     case 60 ... 69:
@@ -38,7 +41,8 @@ int main() {
         printf("\nLetter grade is: A\n");
         break;
     
-    default: // Output an error message for the default case to handle unexpected input.
+    // Output an error message for the default case to handle unexpected input.
+    default:
         printf("\nNumerical grade must be between 1-100\n");
         break;
     }
