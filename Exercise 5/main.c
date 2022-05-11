@@ -20,10 +20,6 @@ int main() {
         printf("\nInvalid value\n");
         return 0;
     }
-    /* if (userNumber > 10) {
-        printf("\nInvalid value\n");
-        return 0;
-    } */
 
     // Is positive/negative?
     if (userNumber < 0) {
