@@ -18,9 +18,11 @@ int main() {
     // Check if userNumber is within the range of -10 and 10.
     if (userNumber < -10) {
         printf("\nInvalid value\n");
+        return 0;
     }
     if (userNumber > 10) {
         printf("\nInvalid value\n");
+        return 0;
     }
 
     // Is positive/negative?
