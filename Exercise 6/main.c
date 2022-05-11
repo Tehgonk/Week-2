@@ -12,7 +12,27 @@ int main() {
 
     switch (op) {
         case '+':
-        printf("%lf%c%lf = %lf", n1, op, n2, n1 + n2);
+        printf("\n%g%c%g = %g", n1, op, n2, n1 + n2);
+        break;
+
+        case '-':
+        printf("\n%g%c%g = %g", n1, op, n2, n1 - n2);
+        break;
+
+        case '/':
+        printf("\n%g%c%g = %g", n1, op, n2, n1 / n2);
+        break;
+
+        case '%':
+        printf("\n%g%c%g = %g", n1, op, n2, n1 % n2);
+        break;
+
+        case '^':
+        printf("\n%g%c%g = %g", n1, op, n2, pow(n1, n2));
+        break;
+
+        default:
+        printf("\nInvalid operator");
         break;
     }
 
