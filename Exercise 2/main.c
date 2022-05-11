@@ -11,7 +11,7 @@ int main() {
     float a, b, c, d, t;
 
     // Prompt user for four numbers, save as a, b, c, d.
-    printf("enter 4 numbers: ");
+    printf("\nEnter 4 numbers: ");
     scanf("%f %f %f %f", &a, &b, &c, &d);
 
     // Sort numbers in ascending order using a sorting network algorithm.
@@ -32,7 +32,7 @@ int main() {
     if (b < c) {t = b; b = c; c = t;}
 
     // Output numbers in descending order.
-    printf("\nDescending order: %g %g %g %g", a, b, c, d);
+    printf("\nDescending order: %g %g %g %g\n", a, b, c, d);
 
     return 0;
 }
