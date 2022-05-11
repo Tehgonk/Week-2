@@ -15,20 +15,20 @@ int main() {
     printf("\nEnter a value between -10 and 10: ");
     scanf("%f", &userNumber);
 
-    // Check if userNumber is within the range of -10 and 10.
+    // Output warning and exit if userNumber is not between -10 and 10.
     if (userNumber < -10 || userNumber > 10) {
         printf("\nInvalid value\n");
         return 0;
     }
 
-    // Is positive/negative?
+    // Output that the value is positive if userNumber < 0, else negative.
     if (userNumber < 0) {
         printf("\nValue is negative\n");
     } else {
         printf("\nValue is positive\n");
     }
 
-    // Is odd/even?
+    // Output that the value is even if the remainder of userNumber / 2 is 0, else odd.
     if (fmod(userNumber, 2) == 0) {
         printf("\nValue is even\n");
     } else {
