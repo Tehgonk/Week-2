@@ -36,3 +36,7 @@ int main() {
     } else {
         printf("\nValue is odd\n");
     }
+
+    return 0;
+
+}
