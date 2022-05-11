@@ -1,0 +1,48 @@
+/* Exercise 4  - Convert a numerical grade into a letter grade.
+ * Author: Daniel Geula
+ * Date: 10/05/2022
+ * Version: 1.0
+*/
+
+#include <stdio.h>
+
+int main() {
+
+    int numericalGrade;
+
+    // Prompt user for numerical grade, save as numericalGrade.
+    printf("\nEnter numerical grade: ");
+    scanf("%d", &numericalGrade);
+
+    
+    switch (numericalGrade) // Convert numerical grade to letter grade using switch statement.
+    {
+    
+    case 0 ... 59: // Specify a case range for each letter grade.
+        printf("\nLetter grade is: F\n"); // Output a letter grade for each case.
+        break;
+
+    case 60 ... 69:
+        printf("\nLetter grade is: D\n");
+        break;
+    
+    case 70 ... 79:
+        printf("\nLetter grade is: C\n");
+        break;
+    
+    case 80 ... 89:
+        printf("\nLetter grade is: B\n");
+        break;
+    
+    case 90 ... 100:
+        printf("\nLetter grade is: A\n");
+        break;
+    
+    default: // Output an error message for the default case to handle unexpected input.
+        printf("\nNumerical grade must be between 1-100\n");
+        break;
+    }
+
+    return 0;
+
+}
