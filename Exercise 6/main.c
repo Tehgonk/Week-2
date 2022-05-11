@@ -24,7 +24,7 @@ int main() {
         break;
 
         case '%':
-        printf("\n%g%c%g = %g", n1, op, n2, n1 % n2);
+        printf("\n%g%c%g = %g", n1, op, n2, fmod(n1, n2));
         break;
 
         case '^':
