@@ -30,8 +30,8 @@ int main() {
     }
 
     // Is odd/even?
-    if ((userNumber % 2) == 0) {
+    if (fmod(userNumber, 2) == 0) {
         printf("\nValue is even\n");
     } else {
-        printf("\nValue is odd\n")
+        printf("\nValue is odd\n");
     }
