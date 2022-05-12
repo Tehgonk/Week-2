@@ -20,25 +20,25 @@ int main() {
     sum = sum + remainder*remainder*remainder;
     userNumber = userNumber / 10;
 
-    printf("Pass1: remainder = %d, sum = %d, userNumber = %d\n", remainder, sum, userNumber);
+    // printf("Pass1: remainder = %d, sum = %d, userNumber = %d\n", remainder, sum, userNumber);
 
     // Second pass
     remainder = userNumber % 10;
     sum = sum + remainder*remainder*remainder;
     userNumber = userNumber / 10;
 
-    printf("Pass2: remainder = %d, sum = %d, userNumber = %d\n", remainder, sum, userNumber);
+    // printf("Pass2: remainder = %d, sum = %d, userNumber = %d\n", remainder, sum, userNumber);
 
     sum = sum + userNumber;
 
-    printf("temp = %d, sum = %d", temp, sum);
+    // printf("temp = %d, sum = %d", temp, sum);
 
-    /* if (temp == sum) {
+    if (temp == sum) {
         printf("Armstrong number.");
     } 
     else {
         printf("Not armstrong number.");
-    } */
+    }
 
     return 0;
 }
