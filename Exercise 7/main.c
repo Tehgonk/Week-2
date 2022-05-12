@@ -9,7 +9,33 @@
 
 int main() {
 
+    int userNumber, remainder, sum = 0, temp;
+
+    printf("Enter a three digit number: ");
+    scanf("%d", &userNumber);
+    temp = userNumber;
     
+    // First pass
+    remainder = userNumber % 10;
+    sum = sum + pow(remainder, 3);
+    userNumber = userNumber / 10;
+
+    // Second pass
+    remainder = userNumber % 10;
+    sum = sum + pow(remainder, 3);
+    userNumber = userNumber / 10;
+
+    // Third pass
+    remainder = userNumber % 10;
+    sum = sum + pow(remainder, 3);
+    userNumber = userNumber / 10;
+
+    if (temp == sum) {
+        printf("Armstrong number.");
+    } 
+    else {
+        printf("Not armstrong number.");
+    }
 
     return 0;
 }
