@@ -17,14 +17,14 @@ int main() {
     
     // First pass
     remainder = userNumber % 10;
-    sum = sum + pow(remainder, 3);
+    sum = sum + remainder*remainder*remainder;
     userNumber = userNumber / 10;
 
     printf("Pass1: remainder = %d, sum = %d, userNumber = %d\n", remainder, sum, userNumber);
 
     // Second pass
     remainder = userNumber % 10;
-    sum = sum + pow(remainder, 3);
+    sum = sum + remainder*remainder*remainder;
     userNumber = userNumber / 10;
 
     printf("Pass2: remainder = %d, sum = %d, userNumber = %d\n", remainder, sum, userNumber);
