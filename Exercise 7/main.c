@@ -1,4 +1,4 @@
-/* Exercise 7 - Armstrong number.
+/* Exercise 7 - Armstrong numbers.
  * Author: Daniel Geula
  * Date: 12/05/2022
  * Version: 1.0
@@ -20,18 +20,21 @@ int main() {
     sum = sum + remainder*remainder*remainder;
     userNumber = userNumber / 10;
 
-    // printf("Pass1: remainder = %d, sum = %d, userNumber = %d\n", remainder, sum, userNumber);
+    printf("Pass1: remainder = %d, sum = %d, userNumber = %d\n", remainder, sum, userNumber);
 
     // Second pass
     remainder = userNumber % 10;
     sum = sum + remainder*remainder*remainder;
     userNumber = userNumber / 10;
 
-    // printf("Pass2: remainder = %d, sum = %d, userNumber = %d\n", remainder, sum, userNumber);
+    // Third pass
+    remainder = userNumber % 10;
+    sum = sum + remainder*remainder*remainder;
+    userNumber = userNumber / 10;
 
-    sum = sum + userNumber;
+    printf("Pass2: remainder = %d, sum = %d, userNumber = %d\n", remainder, sum, userNumber);
 
-    // printf("temp = %d, sum = %d", temp, sum);
+    printf("temp = %d, sum = %d\n", temp, sum);
 
     if (temp == sum) {
         printf("Armstrong number.");
