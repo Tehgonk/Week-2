@@ -11,7 +11,7 @@ int main() {
 
     int userNumber, remainder, sum = 0, temp;
 
-    printf("Enter a three digit number: ");
+    printf("\nEnter a three digit number: ");
     scanf("%d", &userNumber);
     temp = userNumber;
     
@@ -19,8 +19,6 @@ int main() {
     remainder = userNumber % 10;
     sum = sum + remainder*remainder*remainder;
     userNumber = userNumber / 10;
-
-    printf("Pass1: remainder = %d, sum = %d, userNumber = %d\n", remainder, sum, userNumber);
 
     // Second pass
     remainder = userNumber % 10;
@@ -32,15 +30,11 @@ int main() {
     sum = sum + remainder*remainder*remainder;
     userNumber = userNumber / 10;
 
-    printf("Pass2: remainder = %d, sum = %d, userNumber = %d\n", remainder, sum, userNumber);
-
-    printf("temp = %d, sum = %d\n", temp, sum);
-
     if (temp == sum) {
-        printf("Armstrong number.");
+        printf("\nArmstrong number.\n");
     } 
     else {
-        printf("Not armstrong number.");
+        printf("\nNot armstrong number.\n");
     }
 
     return 0;
