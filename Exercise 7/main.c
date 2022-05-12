@@ -9,26 +9,19 @@
 
 int main() {
 
-    int userNum, remainder, sum = 0, temp;
+    int userNum, sum = 0, temp;
 
     printf("\nEnter a three digit number: ");
     scanf("%d", &userNum);
     temp = userNum;
-    
+
     
     // Compute the sum of the cubes of the digits of userNum, save as sum.
-    // First digit.
-    remainder = userNum % 10;
-    sum = sum + remainder*remainder*remainder;
-    userNum = userNum / 10;
-    // Second digit.
-    remainder = userNum % 10;
-    sum = sum + remainder*remainder*remainder;
-    userNum = userNum / 10;
-    // Final digit.
-    remainder = userNum % 10;
-    sum = sum + remainder*remainder*remainder;
-    userNum = userNum / 10;
+    sum += (userNum % 10) * (userNum % 10) * (userNum % 10);
+    userNum /= 10;
+    sum += (userNum % 10) * (userNum % 10) * (userNum % 10);
+    userNum /= 10;
+    sum += (userNum % 10) * (userNum % 10) * (userNum % 10);
 
 
     if (temp == sum) {
