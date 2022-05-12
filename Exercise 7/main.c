@@ -9,26 +9,27 @@
 
 int main() {
 
-    int userNumber, remainder, sum = 0, temp;
+    int userNum, remainder, sum = 0, temp;
 
     printf("\nEnter a three digit number: ");
-    scanf("%d", &userNumber);
-    temp = userNumber;
+    scanf("%d", &userNum);
+    temp = userNum;
     
-    // First pass
-    remainder = userNumber % 10;
+    
+    // Compute the sum of the cubes of the digits of userNum, save as sum.
+    // First digit.
+    remainder = userNum % 10;
     sum = sum + remainder*remainder*remainder;
-    userNumber = userNumber / 10;
+    userNum = userNum / 10;
+    // Second digit.
+    remainder = userNum % 10;
+    sum = sum + remainder*remainder*remainder;
+    userNum = userNum / 10;
+    // Final digit.
+    remainder = userNum % 10;
+    sum = sum + remainder*remainder*remainder;
+    userNum = userNum / 10;
 
-    // Second pass
-    remainder = userNumber % 10;
-    sum = sum + remainder*remainder*remainder;
-    userNumber = userNumber / 10;
-
-    // Third pass
-    remainder = userNumber % 10;
-    sum = sum + remainder*remainder*remainder;
-    userNumber = userNumber / 10;
 
     if (temp == sum) {
         printf("\nArmstrong number.\n");
