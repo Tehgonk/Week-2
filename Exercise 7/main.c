@@ -24,10 +24,10 @@ int main() {
 
 
     if (temp == sum) {
-        printf("\nArmstrong number.\n");
+        printf("\n%d is an Armstrong number.\n", temp);
     } 
     else {
-        printf("\nNot armstrong number.\n");
+        printf("\n%d is not an Armstrong number.\n", temp);
     }
 
     return 0;
