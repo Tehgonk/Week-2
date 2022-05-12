@@ -1,3 +1,9 @@
+/* Exercise 6 - Simple calculator.
+ * Author: Daniel Geula
+ * Date: 12/05/2022
+ * Version: 1.0
+*/
+
 #include <stdio.h>
 #include <math.h>
 
