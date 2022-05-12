@@ -20,10 +20,15 @@ int main() {
     sum = sum + pow(remainder, 3);
     userNumber = userNumber / 10;
 
+    printf("Pass1: remainder = %d, sum = %d, userNumber = %d\n", remainder, sum, userNumber);
+
     // Second pass
     remainder = userNumber % 10;
     sum = sum + pow(remainder, 3);
     userNumber = userNumber / 10;
+
+    printf("Pass2: remainder = %d, sum = %d, userNumber = %d\n", remainder, sum, userNumber);
+
     sum = sum + userNumber;
 
     printf("temp = %d, sum = %d", temp, sum);
