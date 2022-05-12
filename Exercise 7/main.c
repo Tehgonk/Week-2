@@ -24,11 +24,7 @@ int main() {
     remainder = userNumber % 10;
     sum = sum + pow(remainder, 3);
     userNumber = userNumber / 10;
-
-    // Third pass
-    remainder = userNumber % 10;
-    sum = sum + pow(remainder, 3);
-    userNumber = userNumber / 10;
+    sum = sum + userNumber;
 
     if (temp == sum) {
         printf("Armstrong number.");
