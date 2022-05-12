@@ -26,12 +26,14 @@ int main() {
     userNumber = userNumber / 10;
     sum = sum + userNumber;
 
-    if (temp == sum) {
+    printf("temp = %d, sum = %d", temp, sum);
+
+    /* if (temp == sum) {
         printf("Armstrong number.");
     } 
     else {
         printf("Not armstrong number.");
-    }
+    } */
 
     return 0;
 }
