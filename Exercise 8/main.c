@@ -1,3 +1,9 @@
+/* Exercise 7 - Character Case Detection and Conversion
+ * Author: Daniel Geula
+ * Date: 13/05/2022
+ * Version: 1.0 
+*/
+
 #include <stdio.h>
 #include <ctype.h>
 
@@ -5,7 +11,7 @@ int main() {
 
   char userChar;
 
-  // Prompt user to enter a charachter, save as userChar.
+  // Prompt user to enter a character, save as userChar.
   printf("\nEnter a character: ");
   scanf("%c", &userChar);
 
