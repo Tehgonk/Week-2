@@ -14,10 +14,10 @@ int main() {
     printf("Enter 4 numbers: ");
     scanf("%f %f %f %f", &a, &b, &c, &d);
 
-    // Find smallest number, starting with whether a < b, c, and d, save as smallest if true.
+    // Find min, starting with whether a < b, c, d. Save as smallest if true.
+    // Eliminate the previous variable from the comparison each time a smaller number is found.
     if(a < b && a < c && a < d) { 
         smallest = a;
-    // Eliminate the previous variable from the comparison every time it's not the smallest number.
     } else if(b < a && b < c && b < d) {
         smallest = b;
     } else if(c < a && c < b && c < d) {
@@ -26,7 +26,7 @@ int main() {
         smallest = d;
     }
 
-    // Find largest number by mirroring the algorithm for finding the smallest number.
+    // Find max by mirroring the algorithm for finding min.
     if(a > b && a > c && a > d) {
         largest = a;
     } else if(b > a && b > c && b > d) {
