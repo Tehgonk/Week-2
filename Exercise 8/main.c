@@ -12,7 +12,7 @@ int main() {
   // Test userChar is uppercase or not if the ASCII value of userChar is 97 ... 122.
   if (userChar >= 'a' && userChar <= 'z') {
       // Output converted userChar using toupper() if lowercase.
-      printf("input: %c\toutput: $c", userChar, toupper(userChar));
+      printf("input: %c\toutput: %c", userChar, toupper(userChar));
   } else {
       // Output that userChar is already uppercase if not.
       printf("The character you entered is already uppercase.");
