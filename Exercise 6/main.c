@@ -18,9 +18,8 @@ int main() {
     scanf("%lf%c%lf", &n1, &op, &n2);
     
 
-    // Calculate the result of the operation on n1 and n2 using switch statement.
-    // Output the result of the operation on n1 and n2 for each case.
-    // Output an error message for the default case to handle unexpected input.
+    // Compute result of operation on n1 and n2 using switch statement.
+    // Output result of operation on n1 and n2 for each case.
     switch (op) {
         case '+':
         printf("\n%g%c%g = %g\n", n1, op, n2, n1 + n2);
@@ -42,7 +41,7 @@ int main() {
         printf("\n%g%c%g = %g\n\n", n1, op, n2, pow(n1, n2));
         break;
 
-        default:
+        default: // Output error message for default case to handle unexpected input.
         printf("\nInvalid operator\n");
         break;
     }
