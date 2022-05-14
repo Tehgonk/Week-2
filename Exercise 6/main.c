@@ -1,4 +1,4 @@
-/* Exercise 6 - Simple calculator.
+/* Exercise 6 - Calculator.
  * Author: Daniel Geula
  * Date: 12/05/2022
  * Version: 1.0
@@ -12,7 +12,7 @@ int main() {
     double n1, n2;
     char op;
 
-    // Promp user to enter two numbers separated by an operator, save as n1, n2 and op.
+    // Prompt user to enter two numbers separated by an operator, save as n1, n2, op.
     printf("\nAllowed operators: '+' '-' '/' '%%' '^'\n");
     printf("Enter two numbers separated by an operator: ");
     scanf("%lf%c%lf", &n1, &op, &n2);
