@@ -1,18 +1,19 @@
 # Exercise 1: Find Min and Max
-## **Description**
-
+### Description
 Write a program that asks the user to input 4 numbers and displays the minimum and maximum values.
-## **Pseudocode**
+<br/><br/>
+### Pseudocode
 - Prompt user for four numbers, save as `a, b, c, d`.
 
 - Find min, starting with whether `a < b, c, d`. Save as `smallest` if true.
 
-- Eliminate the previous variable from the comparison each time a smaller number is found.
+  - Eliminate the previous variable from the comparison each time a smaller number is found.
 
-- Find max by mirroring the algorithm for finding min.
+  - Find max by mirroring the algorithm for finding min..
 
 - Output smallest and largest numbers.
-## Flowchart
+<br/><br/>
+### Flowchart
 ```mermaid
 
 flowchart LR
@@ -55,7 +56,8 @@ C --> |else| d --> Largest
 Largest --> ST([Stop])
 
 ```
-## **Output**
+<br/><br/>
+### Output
 ```
 
 C:\****>a
