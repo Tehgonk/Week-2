@@ -30,9 +30,9 @@ STR --> SEED
 SEED --> IN
 IN --> GO
 GO --> IF1
-IF1 --> OUT1
+IF1 -->|true| OUT1
 IF1 -->|else if| IF2
-IF2 --> OUT2
+IF2 -->|true| OUT2
 OUT2 -->|try again| GO
 IF2 -->|else| OUT3
 OUT3 -->|try again| GO
