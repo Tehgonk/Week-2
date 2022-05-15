@@ -8,12 +8,11 @@ Using the switch statement write a program that converts a numerical grade into 
 Use the following grading scale: A = 90-100, B=80-89, C=70-79, D=60-69, F=0-59. Print an error message if the grade is greater than 100 or less than 0. 
 <br/><br/>
 ### Pseudocode
-- Seed random number generator, save as `randomNumber`.
-- Prompt user for a guess, save as `userGuess`.
-- Create `goto` label `begin`.
-- Output a congratulatory message if the user guesses the correct number.
-  - Prompt user for another guess if the previous guess was too low, `goto begin`.
-  - Do the same for other case.
+- Prompt user for numerical grade, save as `numericalGrade`.
+- Convert numerical grade to letter grade using switch statement.
+    - Specify a case range for each letter grade.
+    - Output a letter grade for each case.
+    - Output an error message for the default case to handle unexpected input.
 <br/><br/>
 ### Flowchart
 ```mermaid
