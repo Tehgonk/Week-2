@@ -4,57 +4,60 @@ Write a program that asks the user to input 4 numbers and displays the minimum a
 <br/><br/>
 ### Pseudocode
 - Prompt user for four numbers, save as `a, b, c, d`.
-
-- Find min, starting with whether `a < b, c, d`. Save as `smallest` if true.
-
+- Find min, starting with whether `a < b, c, & d`. Save as `smallest` if true.
   - Eliminate the previous variable from the comparison each time a smaller number is found.
-
-  - Find max by mirroring the algorithm for finding min..
-
-- Output smallest and largest numbers.
+  - Find max by mirroring the algorithm for finding min.
+- Output `smallest` and `largest`.
 <br/><br/>
 ### Flowchart
 ```mermaid
-
 flowchart LR
+START([Start])
+INPUT[/Input<br>a, b, c, d/]
+A{a < b, c, & d}
+B{b < c, & d}
+C{c < d}
+d
+SMALL[Smallest]
+OUT[/Output result/]
+STOP([Stop])
 
-S([Start]) --> A{Is a < b, c, d?}
-
-A --> |true| Smallest
-
-A --> |else| B{Is b < c, d?}
-
-B --> |true| Smallest
-
-B --> |else| C{Is c < d?}
-
-C --> |true| Smallest
-
-C --> |else| d --> Smallest
-
-Smallest --> ST([Stop])
-
+START --> INPUT
+INPUT --> A
+A --> |true|SMALL
+A -->|else| B
+B --> |true|SMALL
+B -->|else| C
+C --> |true|SMALL
+C -->|else| d
+d --> SMALL
+SMALL --> OUT
+OUT --> STOP
 ```
+
 ```mermaid
-
 flowchart LR
+START([Start])
+INPUT[/Input<br>a, b, c, d/]
+A{a > b, c, & d}
+B{b > c, & d}
+C{c > d}
+d
+LARGE[Largest]
+OUT[/Output result/]
+STOP([Stop])
 
-S([Start]) --> A{Is a > b, c, d?}
-
-A --> |true| Largest
-
-A --> |else| B{Is b > c, d?}
-
-B --> |true| Largest
-
-B --> |else| C{Is c > d?}
-
-C --> |true| Largest
-
-C --> |else| d --> Largest
-
-Largest --> ST([Stop])
-
+START --> INPUT
+INPUT --> A
+A --> |true|LARGE
+A -->|else| B
+B --> |true|LARGE
+B -->|else| C
+C --> |true|LARGE
+C -->|else| d
+d --> LARGE
+LARGE --> OUT
+OUT --> STOP
 ```
 <br/><br/>
 ### Output
