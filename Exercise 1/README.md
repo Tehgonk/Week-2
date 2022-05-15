@@ -37,27 +37,17 @@ OUT --> STOP
 <br/><br/>
 ### Output
 ```
+C:\****\Week-2\Exercise 1>a
 
-C:\****>a
+Enter 4 numbers: 5 9 2 6
 
-Enter 4 numbers: 4 5 3 9
-
-  
-
-The smallest number is: 3
-
+The smallest number is: 2
 The largest number is: 9
 
-  
+C:\****\Week-2\Exercise 1>a
 
-C:\****>a
+Enter 4 numbers: 10 -5 92.62 6.4
 
-Enter 4 numbers: -5.3 10.95 -1 1
-
-  
-
-The smallest number is: -5.3
-
-The largest number is: 10.95
-
+The smallest number is: -5
+The largest number is: 92.62
 ```
