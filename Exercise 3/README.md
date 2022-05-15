@@ -33,9 +33,9 @@ GO --> IF1
 IF1 -->|true| OUT1
 IF1 -->|else if| IF2
 IF2 -->|true| OUT2
-OUT2 -->|try again| GO
+OUT2 -.->|try again| GO
 IF2 -->|else| OUT3
-OUT3 -->|try again| GO
+OUT3 -.->|try again| GO
 OUT1 --> STP
 ```
 <br/><br/>
