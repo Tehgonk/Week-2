@@ -1,4 +1,4 @@
-# Exercise 1: Find Min and Max
+# Exercise 2: Sort Ascending and Descending
 ### Description
 Write a program that asks the user to input 4 numbers and displays the values in (a) ascending and (b) descending orders.
 <br/><br/>
@@ -10,7 +10,7 @@ Write a program that asks the user to input 4 numbers and displays the values in
 - Output numbers in descending order.
 <br/><br/>
 ### Network Diagram
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/15e35974-4b01-43e3-93e1-34d5d1f2a4fc/Untitled.png)
+![Network diagram](https://i.imgur.com/6J6Lc2G.jpg)
 <br/><br/>
 ### Output
 ```
