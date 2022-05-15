@@ -14,49 +14,24 @@ Write a program that asks the user to input 4 numbers and displays the minimum a
 flowchart LR
 START([Start])
 INPUT[/Input<br>a, b, c, d/]
-A{a < b, c, & d}
-B{b < c, & d}
-C{c < d}
+A{a >/< b, c, & d}
+B{b >/< c, & d}
+C{c >/< d}
 d
-SMALL[Smallest]
+SIZE[Largest/Smallest]
 OUT[/Output result/]
 STOP([Stop])
 
 START --> INPUT
 INPUT --> A
-A --> |true|SMALL
+A --> |true|SIZE
 A -->|else| B
-B --> |true|SMALL
+B --> |true|SIZE
 B -->|else| C
-C --> |true|SMALL
+C --> |true|SIZE
 C -->|else| d
-d --> SMALL
-SMALL --> OUT
-OUT --> STOP
-```
-
-```mermaid
-flowchart LR
-START([Start])
-INPUT[/Input<br>a, b, c, d/]
-A{a > b, c, & d}
-B{b > c, & d}
-C{c > d}
-d
-LARGE[Largest]
-OUT[/Output result/]
-STOP([Stop])
-
-START --> INPUT
-INPUT --> A
-A --> |true|LARGE
-A -->|else| B
-B --> |true|LARGE
-B -->|else| C
-C --> |true|LARGE
-C -->|else| d
-d --> LARGE
-LARGE --> OUT
+d --> SIZE
+SIZE --> OUT
 OUT --> STOP
 ```
 <br/><br/>
