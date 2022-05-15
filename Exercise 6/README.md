@@ -9,12 +9,10 @@ Write a program that takes as input two numbers and one of the following operato
 - Compute result of operation on `n1` and `n2` using switch statement.
 - Output result of operation on `n1` and `n2` for each case.
 - Output error message for default case to handle unexpected input.
-
-Note: allowed operators are: `+` `-` `/` `%` `^`.
 <br/><br/>
 ### Flowchart
 ```mermaid
-flowchart LR
+flowchart TD
 
 STA([Start]) --> IN[/Input<br>n1, n2, op/]
 IN --> SWI[Switch]
