@@ -17,10 +17,8 @@ flowchart LR
 
 STA([Start]) --> PRO1[sum = 0]
 PRO1 --> IN[/Input<br>userNumber/]
-IN --> PRO2["sum = (sum % 10)^3<br>userNum = userNum / 10"]
-PRO2 --> PRO3["sum = (sum % 10)^3<br>userNum = userNum / 10"]
-PRO3 --> PRO4["sum = (sum % 10)^3"]
-PRO4 --> IF{temp == sum} -->|true| OUT1[/Output<br>Is Armstrong/] --> STO([Stop])
+IN --> PRO2["sum = (sum % 10)^3<br>userNum = userNum / 10<br>sum = (sum % 10)^3<br>userNum = userNum / 10<br>sum = (sum % 10)^3"]
+PRO2 --> IF{temp == sum} -->|true| OUT1[/Output<br>Is Armstrong/] --> STO([Stop])
 IF -->|else| OUT2[/Output<br>Is not Armstrong/] --> STO
 
 ```
